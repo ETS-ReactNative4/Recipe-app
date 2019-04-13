@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Pacifico');
 
 
 
@@ -34,23 +34,31 @@ button:focus {
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
+  font-family: 'Pacifico', sans-serif;
+  text-align: center;
 }
 
 .recipe_buttons {
-  border: solid 2px #e74c3c;
   background-image: linear-gradient(153deg, #8e2ef7 0%, #61dec7 95%);
   padding: 0.4rem 0.6rem;
   margin: 0 0.2rem;
   border-radius: 10px;
+  letter-spacing: 1px;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
   margin-left: 0.7rem;
 }
 
+.recipe_buttons:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
 .recipes__box {
-  background: #1C1D1F;
+  background: #3f5f7f;
   padding-bottom: 2rem;
   border-radius: 5px;
   box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
@@ -64,7 +72,7 @@ button:focus {
 
 .recipes__title {
   color: #e74c3c;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.1rem;
   padding: 1.8rem 0 0.2rem 0;
 }
@@ -86,7 +94,7 @@ button:focus {
 .form__input {
   background: transparent;
   border: 0;
-  border-bottom: solid 2px #2c3e50;
+  border-bottom: solid 2px rgb(11, 106, 177);
   margin-right: 10px;
   letter-spacing: 2px;
   width: 10%;
@@ -94,16 +102,23 @@ button:focus {
 }
 
 .form__button {
-  border: solid 1px #e74c3c;
+  border: 1px solid rgba(0, 0, 0, 1);
   background-image: linear-gradient(90deg, rgb(139, 19, 19) 0%, rgb(161, 3, 171) 100%);
   color: rgb(232, 230, 227);
   padding: 0.2rem 0.9rem;
   margin: 0 0.2rem;
   border-radius: 10px;
   font-size: 1rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 500;
   margin-left: 0.7rem;
+}
+
+.form__button:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+  opacity: 0.8;
 }
 
 input[type="text"] {
@@ -118,18 +133,23 @@ input:-webkit-autofill {
 /******** RECIPE.js ********/
 
 .active-recipe {
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 60%;
+  background: #3f5f7f;
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 .active-recipe__img {
   height: 500px !important;
+  border-radius: 10px;
 }
 
 .active-recipe__title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 2px;
   margin: 1rem 0;
+  color: #e74c3c;
 }
 
 .active-recipe__publisher, .active-recipe__website {
@@ -154,12 +174,18 @@ input:-webkit-autofill {
 }
 
 .active-recipe__button {
-  border: solid 2px #e74c3c;
   background-image: linear-gradient(153deg, #8e2ef7 0%, #61dec7 95%);
   padding: 0.2rem 0.9rem;
   margin: 0 0.2rem;
-  border-radius: 1px;
+  border-radius: 10px;
+  letter-spacing: 1px;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.active-recipe__button:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+  opacity: 0.8;
 }
