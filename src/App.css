@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+
 body {
-  background:#f3f3f3;
+  background: #1C1D1F;
+  font-family: 'Nunito', sans-serif;
+  color: #fff
 }
 
 img {
@@ -8,7 +14,7 @@ img {
 }
 
 a {
-  color: #e74c3c !important;
+  color: #fff !important;
 }
 
 button:focus {
@@ -20,7 +26,7 @@ button:focus {
 }
 
 .App-header {
-  background-color: #2c3e50;
+  background-image: linear-gradient(153deg, rgb(22, 147, 118) 0%, rgb(11, 106, 177) 95%);
   height: 90px;
   padding: 30px;
   color: white;
@@ -33,10 +39,10 @@ button:focus {
 
 .recipe_buttons {
   border: solid 2px #e74c3c;
-  background: transparent;
+  background-image: linear-gradient(153deg, #8e2ef7 0%, #61dec7 95%);
   padding: 0.4rem 0.6rem;
   margin: 0 0.2rem;
-  border-radius: 1px;
+  border-radius: 10px;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -44,7 +50,7 @@ button:focus {
 }
 
 .recipes__box {
-  background: #fff;
+  background: #1C1D1F;
   padding-bottom: 2rem;
   border-radius: 5px;
   box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
@@ -88,18 +94,19 @@ button:focus {
 }
 
 .form__button {
-  border: solid 2px #e74c3c;
-  background: transparent;
+  border: solid 1px #e74c3c;
+  background-image: linear-gradient(90deg, rgb(139, 19, 19) 0%, rgb(161, 3, 171) 100%);
+  color: rgb(232, 230, 227);
   padding: 0.2rem 0.9rem;
   margin: 0 0.2rem;
-  border-radius: 1px;
+  border-radius: 10px;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   margin-left: 0.7rem;
 }
 
-input[type="text"] { 
+input[type="text"] {
   outline: none;
 }
 
@@ -148,7 +155,7 @@ input:-webkit-autofill {
 
 .active-recipe__button {
   border: solid 2px #e74c3c;
-  background: transparent;
+  background-image: linear-gradient(153deg, #8e2ef7 0%, #61dec7 95%);
   padding: 0.2rem 0.9rem;
   margin: 0 0.2rem;
   border-radius: 1px;
