@@ -149,6 +149,9 @@ input:-webkit-autofill {
   text-transform: capitalize;
   letter-spacing: 2px;
   margin: 1rem 0;
+}
+
+.active-recipe__title span a {
   color: #e74c3c;
 }
 

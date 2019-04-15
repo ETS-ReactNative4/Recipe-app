@@ -23,13 +23,13 @@ class Recipe extends React.Component {
       { this.state.activeRecipe.length !== 0 &&
           <div className="active-recipe">
            <img className="active-recipe__img" src={recipe.image_url} alt ={recipe.title}/>
-           <h3 className="active-recipe__title">{ recipe.title }</h3>
+           <h3 className="active-recipe__title"><span><a href={ recipe.source_url } target= "_blank" >{ recipe.title }</a></span></h3>
            <h4 className="active-recipe__publisher">
             Publisher: <span>{ recipe.publisher }</span>
            </h4>
-           <p className="active-recipe__website">Website:
+           <h4 className="active-recipe__website">Website:
           <span><a href={ recipe.source_url } target= "_blank" >{ recipe.publisher_url }</a></span>
-           </p>
+           </h4>
            <button className="active-recipe__button">
            <Link to="/">Go Home</Link>
            </button>
