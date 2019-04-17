@@ -95,6 +95,7 @@ button:focus {
   background: transparent;
   border: 0;
   border-bottom: solid 2px rgb(11, 106, 177);
+  color: white;
   margin-right: 10px;
   letter-spacing: 2px;
   width: 10%;
@@ -141,7 +142,7 @@ input:-webkit-autofill {
 }
 
 .active-recipe__img {
-  height: 500px !important;
+  height: 500px;
   border-radius: 10px;
 }
 
@@ -195,11 +196,28 @@ input:-webkit-autofill {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+.form__input {
+  width: 30%;
+}
+
+
+
   /******** RECIPE.js ********/
 
   .active-recipe {
-    width: 80%;
-    margin: auto;
+    width: 95%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .active-recipe__img {
+    height: 300px;
+  }
+
+  .active-recipe__website span {
+    margin-left: 0;
+    font-size: smaller;
   }
 }
